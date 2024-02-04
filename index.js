@@ -6,14 +6,14 @@ const record = [
     //...
 ]
 
-function superbowlWin(record) {
-    const winningYear = record.find(game => game.result === "W")
-    return winningYear ? winningYear.year : undefined;
-}
-
-// const superbowlWin = record => {
+// function superbowlWin(record) {
 //     const winningYear = record.find(game => game.result === "W")
 //     return winningYear ? winningYear.year : undefined;
+// }
+
+const superbowlWin = record => {
+    const winningYear = record.find(game => game.result === "W")
+    return winningYear ? winningYear.year : undefined;
 }
 /*
 function superbowlWin(record) {
